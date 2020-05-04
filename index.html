@@ -27,10 +27,10 @@
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
-
+    
     <script>
-        $('.before-after').imagesLoaded( function() {
-            $('.before-after').twentytwenty();
+        $(window).on("load", function() {
+            $(window).trigger("resize.twentytwenty");
         });
     </script>
 
