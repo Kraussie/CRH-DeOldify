@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRH DeOldify | ML Project</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/97/Choate_Rosemary_Hall_Crest.png">
+
+    <style>
+        #roundElement {
+            border-radius: 7px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    </style>
+
+    <!--TwentyTwenty Plugin-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+
+    <!--Simple Analytics (Event Tracking)-->
+    <script>window.sa_event=window.sa_event||function(){a=[].slice.call(arguments);sa_event.q?sa_event.q.push(a):sa_event.q=[a]};</script>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</head>
+<body onload='newImage(); $(function(){$("#container1").twentytwenty();});'>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper brown darken-1 z-depth-2 center">
+                <a class="center" href="https://natekrauss.me/Trump-Tweeter/" style="font-size: 30px;"><b>CRH DeOldify</b></a>
+            </div>
+        </nav>
+    </div><br>
+    <div class="row container center">
+        <p><span style="font-weight: bold; background-color: red; color: white; padding: 4px; padding-left: 8px; padding-right: 8px;" id="roundElement">DISCLAIMER:</span> I do not own any of the photos hosted on this website.</p>
+        <div class="container center">
+            <button class="btn waves-effect waves-light brown lighten-1" id="roundElement" onclick="location.reload();">More Photos
+                <i class="material-icons left">refresh</i>
+            </button>
+        </div><br>
+        
+        <div class="col s12 m8 l8 xl8">
+            <div id="container1">
+                <!-- The before image is first -->
+                <img id="random1"/>
+                <!-- The after image is last -->
+                <img id="random2"/>
+            </div>
+        </div>
+        
+
+        <!--
+        <div class="col s12 m6 l6 xl6">
+            <div class="card z-depth-2" id="roundElement" style="padding: 5%">
+                <img class="materialboxed" width="300" src="assets/1.jpg">
+            </div>
+        </div>
+        <div class="col s12 m6 l6 xl6">
+            <div class="card z-depth-2" id="roundElement">
+                IMAGE HERE
+            </div>
+        </div>-->
+    </div><br>
+    <div class="container">
+        <h4><b>About the Project</b></h4><hr>
+        <h5>The Assignment:</h5>
+        <p>This project is an assignment in Choate Rosemary Hall's Machine Learning class (CS580-HO). Individually, we each were required to use Google Colab Notebooks to create a machine learning project.</p>
+        <p>I decided to use the <a href="https://github.com/jantic/DeOldify">DeOlidfy Algorithm</a> to colorize old photos from the Choate Rosemary Hall archives.</p>
+
+        <h5>About DeOldify:</h5>
+        <p>While brainstorming new project ideas for this Machine Learning project, I came upon this project by <a href="https://github.com/jantic">jantic</a>. He created a project called <a href="https://github.com/jantic/DeOldify">DeOlidfy</a> that is can "colorize and restore old images and film footage." The Project's GitHub Page has some amazing examples of the capabilities of the project. If you would like to learn how the project works, please visit the GitHub page. Additionally, the project has been implemented on the website <a href="https://www.myheritage.com/incolor">MyHeritage</a>.</p>
+    </div><br>
+
+    <div class="brown darken-1 center">
+        <div class="container">
+            <br>
+            <p style="color: white; font-size: 18px;">This project was created by <a href="https://natekrauss.me" style="color: white; text-decoration-color: white; text-decoration: underline; font-weight: bold;">Nate Krauss</a> for a project in Choate Rosemary Hall's Machine Learning Class (CS580-HO).<br>Copyright (c) 2020 Nathanial Krauss under the <a href="https://github.com/Kraussie/Trump-Tweet-Bot/blob/master/LICENSE" style="color: white; text-decoration-color: white; text-decoration: underline;">MIT License</a></p>
+            <a href="privacy.html" style="font-size: 14px; color: white; text-decoration: underline;;">Privacy Policy</a><br><br>
+        </div>
+    </div>
+
+    <!--New Tweet Script-->
+    <script src="tweets.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Simple Analytics (General Analytics)-->
+    <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+    <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+</body>
+</html>
