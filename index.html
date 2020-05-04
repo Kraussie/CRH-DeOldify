@@ -28,6 +28,13 @@
     <script src="js/jquery.twentytwenty.js"></script>
     <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
 
+    <script>
+        $(window).load(function () {
+        $('.twentytwenty-container').eq(0).twentytwenty({ default_offset_pct: 0.33 });
+        $('.twentytwenty-container').eq(1).twentytwenty();
+        });
+    </script>
+
     <!--Simple Analytics (Event Tracking)-->
     <script>window.sa_event=window.sa_event||function(){a=[].slice.call(arguments);sa_event.q?sa_event.q.push(a):sa_event.q=[a]};</script>
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
