@@ -12,6 +12,9 @@
 
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/97/Choate_Rosemary_Hall_Crest.png">
 
+    <!--Pre load images-->
+    <link rel="preload" as="image" href="map.png" media="(max-width: 600px)">
+
     <style>
         #roundElement {
             border-radius: 7px;
@@ -83,7 +86,7 @@
         <p>I decided to use the <a href="https://github.com/jantic/DeOldify">DeOlidfy Algorithm</a> to colorize old photos from the Choate Rosemary Hall archives.</p>
 
         <h5>About DeOldify:</h5>
-        <p>While brainstorming new project ideas for this Machine Learning project, I came upon this project by <a href="https://github.com/jantic">jantic</a>. He created a project called <a href="https://github.com/jantic/DeOldify">DeOlidfy</a> that is can "colorize and restore old images and film footage." The Project's GitHub Page has some amazing examples of the capabilities of the project. If you would like to learn how the project works, please visit the GitHub page. Additionally, the project has been implemented on the website <a href="https://www.myheritage.com/incolor">MyHeritage</a>.</p>
+        <p>While brainstorming new project ideas for this Machine Learning project, I came upon this project by <a href="https://github.com/jantic">jantic</a>. He created a project called <a href="https://github.com/jantic/DeOldify">DeOlidfy</a> that is can "colorize and restore old images and film footage." The Project's GitHub Page has some amazing examples of the capabilities of the project. If you would like to learn how the project works, please visit the GitHub page. Additionally, the project has been implemented on the website <a href="https://myheritage.com/incolor">MyHeritage</a>.</p>
     </div><br>
 
     <div class="brown darken-1 center">
@@ -92,6 +95,59 @@
             <p style="color: white; font-size: 18px;">This project was created by <a href="https://natekrauss.me" style="color: white; text-decoration-color: white; text-decoration: underline; font-weight: bold;">Nate Krauss</a> for a project in Choate Rosemary Hall's Machine Learning Class (CS580-HO).<br>Copyright (c) 2020 Nathanial Krauss under the <a href="https://github.com/Kraussie/Trump-Tweet-Bot/blob/master/LICENSE" style="color: white; text-decoration-color: white; text-decoration: underline;">MIT License</a></p>
             <a href="privacy.html" style="font-size: 14px; color: white; text-decoration: underline;;">Privacy Policy</a><br><br>
         </div>
+    </div>
+
+
+    <div class="hidden">
+        <script type="text/javascript">
+                var images = new Array()
+                function preload() {
+                    for (i = 0; i < preload.arguments.length; i++) {
+                        images[i] = new Image()
+                        images[i].src = preload.arguments[i]
+                    }
+                }
+                preload(
+                    "https://natekrauss.me/CRH-DeOldify/assets/1.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/2.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/3.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/4.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/5.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/6.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/7.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/8.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/9.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/10.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/11.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/12.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/13.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/14.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/15.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/16.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/17.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/18.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/19.jpg",
+                    "https://natekrauss.me/CRH-DeOldify/assets/1NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/2NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/3NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/4NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/5NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/6NEW.png",
+                    "https://.natekrauss.me/CRH-DeOldify/assets/7NEW.png",
+                    "https://.natekrauss.me/CRH-DeOldify/assets/8NEW.png",
+                    "https://.natekrauss.me/CRH-DeOldify/assets/9NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/10NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/11NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/12NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/13NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/14NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/15NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/16NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/17NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/18NEW.png",
+                    "https://natekrauss.me/CRH-DeOldify/assets/19NEW.png",
+                )
+        </script>
     </div>
 
     <!--New Tweet Script-->
