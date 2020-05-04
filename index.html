@@ -29,9 +29,8 @@
     <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
 
     <script>
-        $(window).load(function () {
-        $('.twentytwenty-container').eq(0).twentytwenty({ default_offset_pct: 0.33 });
-        $('.twentytwenty-container').eq(1).twentytwenty();
+        $('.before-after').imagesLoaded( function() {
+            $('.before-after').twentytwenty();
         });
     </script>
 
